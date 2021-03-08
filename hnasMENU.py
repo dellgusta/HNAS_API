@@ -20,12 +20,12 @@ from urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
 
 BASE_URL = "https://{}:8444/v7/storage/"
-HNCL01 = "1.128.51.228"
-HNCL02 = "1.128.51.237"
-HNCLBKP = "1.128.51.4"
-APIKEY1 = 'mnZ2YeoGwr.iaLEExifBfHLWVMHSbIou8HdcQkFPEGicBVNM0z8gzB'
-APIKEY2 = 'S07FgtoDTM.TjYixsKGR25Mokiw3.hJQdOCYj2a4bZsGMpTj88FkG3'
-APIKEY3 = 'BJaAX8ZdtD.JRm.zOSERmLS9hrdGJdz5zHVt/wFEQL1UObQm2O5xw2'
+HNCL01 = "1.128.xx.xxx"
+HNCL02 = "1.128.xx.xxx"
+HNCLBKP = "1.128.xx.xxx"
+APIKEY1 = 'mnZ2YeoGwr.iaLEExifBfHLWVMHSbIou8HdcQkFXXXXXXzB'
+APIKEY2 = 'S07FgtoDTM.TjYixsKGR25Mokiw3.hJQdOCYXXXXXXXXMpTj88FkG3'
+APIKEY3 = 'BJaAX8ZdtD.JRm.zOSERmLS9hrdGXXXXXXXXXXXXbQm2O5xw2'
 
 
 def getfssnap(storage, apikey, sigla):
@@ -73,7 +73,7 @@ def getfssnap(storage, apikey, sigla):
     print("SnapReport Gerado, valide seu e-mail")
     subprocess.call('mail -s "HNAS Snapshot Report" -a ""/root/HNASAPI/SnapReports/SnapReport_' + sigla + '.txt"" '
                     '-r "root@stsprobe01" < "/root/HNASAPI/tmp/message2" '
-                    "TS_BRA_STO_SUPPORT@t-systems.com", shell=True)
+                    "xxx@t-systems.com", shell=True)
 
 def getBillingQuota(storage, apikey, sigla):
 
